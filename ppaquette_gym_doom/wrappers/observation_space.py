@@ -1,10 +1,11 @@
 import gym
+from vizdoom import ScreenResolution
 
-try:
-    from doom_py import ScreenResolution
-except ImportError as e:
-    raise gym.error.DependencyNotInstalled("{}. (HINT: you can install Doom dependencies " +
-                                           "with 'pip install doom_py.)'".format(e))
+#try:
+#    from doom_py import ScreenResolution
+#except ImportError as e:
+#    raise gym.error.DependencyNotInstalled("{}. (HINT: you can install Doom dependencies " +
+#                                           "with 'pip install doom_py.)'".format(e))
 
 resolutions = ['160x120', '200x125', '200x150', '256x144', '256x160', '256x192', '320x180', '320x200',
                '320x240', '320x256', '400x225', '400x250', '400x300', '512x288', '512x320', '512x384',
